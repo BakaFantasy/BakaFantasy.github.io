@@ -3,9 +3,6 @@ on:
     branches:
       - master
 
-name: "Trigger: Push action"
-permissions: {}
-
 jobs:
   shellcheck:
     name: Shellcheck
@@ -13,4 +10,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run ShellCheck
-        uses: ludeeus/action-shellcheck@1.1.0
+        uses: ludeeus/action-shellcheck@master

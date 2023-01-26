@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run ShellCheck
-        uses: ludeeus/action-shellcheck@master
+        uses: ludeeus/action-shellcheck@main
 
   proselint:
     name: Proselint
@@ -18,4 +18,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Check the spells
-        uses: amperser/proselint@main
+        uses: dhruvmanila/action-proselint@main

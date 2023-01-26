@@ -1,0 +1,3 @@
+marco () {
+	recent=$(pwd)
+}

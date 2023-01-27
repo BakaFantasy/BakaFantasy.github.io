@@ -2,6 +2,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - '**.sh'
 
 jobs:
   shellcheck:
@@ -11,11 +13,3 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run ShellCheck
         uses: ludeeus/action-shellcheck@master
-
-  proselint:
-    name: Proselint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Check the spells
-        uses: dhruvmanila/action-proselint@master

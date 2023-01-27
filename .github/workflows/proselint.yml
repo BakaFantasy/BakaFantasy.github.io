@@ -1,0 +1,16 @@
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.md'
+
+jobs:
+  proselint:
+    name: Proselint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Lint for Prose
+        uses: dhruvmanila/action-proselint@master
